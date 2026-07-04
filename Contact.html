@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arvind H | Scorpio SLX</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Outfit',sans-serif;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+    color:white;
+    font-family:'Outfit',sans-serif;
+
+    /* Background Image */
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("car.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+@keyframes bgMove{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+.card{
+
+width:100%;
+max-width:420px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(25px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:35px;
+
+overflow:hidden;
+
+box-shadow:
+0 30px 60px rgba(0,0,0,.45);
+
+animation:popup .8s;
+
+}
+
+@keyframes popup{
+
+from{
+
+opacity:0;
+transform:translateY(50px) scale(.9);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0) scale(1);
+
+}
+
+}
+.top{
+    height:230px;
+    background-image:url("car.png");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.top::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:linear-gradient(to top,#020617 5%,transparent);
+
+}
+
+.badge{
+
+position:absolute;
+
+right:18px;
+top:18px;
+
+background:#475138;
+
+padding:8px 16px;
+
+border-radius:30px;
+
+font-size:13px;
+
+font-weight:700;
+
+color:#00131f;
+
+}
+
+.content{
+
+padding:28px;
+
+text-align:center;
+
+}
+
+.owner{
+
+font-size:34px;
+
+font-weight:800;
+
+letter-spacing:1px;
+
+}
+
+.subtitle{
+
+margin-top:6px;
+
+font-size:16px;
+
+color:#9ad8ff;
+
+}
+
+.vehicle{
+
+margin:22px auto;
+
+padding:16px;
+
+border-radius:18px;
+
+background:rgba(255,255,255,.05);
+
+}
+
+.vehicle h3{
+
+font-size:25px;
+
+margin-bottom:8px;
+
+}
+
+.reg{
+
+font-size:20px;
+
+font-weight:700;
+
+letter-spacing:3px;
+
+color:#00e5ff;
+
+}
+
+.contact{
+
+margin-top:25px;
+
+display:grid;
+
+gap:14px;
+
+}
+
+.contact a{
+
+text-decoration:none;
+
+padding:16px;
+
+border-radius:16px;
+
+font-size:18px;
+
+font-weight:700;
+
+transition:.35s;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.call{
+
+background:#475138;
+
+color:white;
+
+}
+
+.call:hover{
+
+transform:translateY(-4px);
+
+}
+
+.call2{
+
+background:#4F5D3A;
+
+color:white;
+
+}
+
+.call2:hover{
+
+transform:translateY(-4px);
+
+}
+
+.whatsapp{
+
+background:#4F5D3A;
+
+color:white;
+
+}
+
+.whatsapp:hover{
+
+transform:translateY(-4px);
+
+}
+
+.note{
+
+margin-top:25px;
+
+font-size:14px;
+
+line-height:24px;
+
+color:#d7d7d7;
+
+}
+
+.footer{
+
+margin-top:28px;
+
+font-size:13px;
+
+opacity:.7;
+
+}
+
+@media(max-width:500px){
+
+.owner{
+
+font-size:29px;
+
+}
+
+.vehicle h3{
+
+font-size:22px;
+
+}
+
+.reg{
+
+font-size:18px;
+
+}
+
+.top{
+
+height:200px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="top">
+
+<div class="badge">
+
+<P style="color:white">BIG DADDY</p>
+
+
+</div>
+
+</div>
+
+<div class="content">
+<h3>TITANITE BATWHEELS Jr</h3>
+<br>
+<div class="owner">
+
+
+
+Arvind H
+</div>
+
+<div class="subtitle">
+Vehicle Owner Contact
+</div>
+
+<div class="vehicle">
+
+<h3>Mahindra Scorpio SLX</h3>
+
+<div class="reg">
+KA03MH7874
+</div>
+
+</div>
+
+<div class="contact">
+
+<a class="call" href="tel:9740641613">
+📞 Call 9740641613
+</a>
+
+<a class="whatsapp" href="https://wa.me/919740641613">
+💬 WhatsApp
+</a>
+
+</div>
+
+<div class="note">
+
+If you found this vehicle, need to contact the owner, or have any important information, please use one of the options above.
+
+</div>
+
+<div class="footer">
+
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
